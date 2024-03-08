@@ -8,13 +8,15 @@ console.log(resposta);
 //aqui eu to definindo o tamanho da tela e falando que funções vão ser usadas na cena
 var config = {
     type: Phaser.AUTO,
-    width: 800,
-    height: 600,
 
     scene:{
         preload: preload,
         create: create,
         update: update
+    },
+    scale:{
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
     }
 };
 
